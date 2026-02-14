@@ -1,32 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
-    color: white;
+    color: #8B0000;
 }
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #1f1f1f;
-    color: #f97316;
+    padding: 22px;
+    background-color: #8B0000;
+    color: #ffffff;
     font-size: 28px;
     font-weight: bold;
-    letter-spacing: 1px;
+}
+.logo-section img {
+    height: 60px;
+    background-color:white;
+    border-radius:5px;
 }
 .container {
     width: 75%;
-    margin: 30px auto;
-    background-color: #1e1e1e;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.6);
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    border: 3px solid #8B0000;
 }
 form {
     display: flex;
     gap: 15px;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 20px;
 }
 form input,
@@ -35,9 +38,9 @@ form select {
     border-radius: 6px;
     font-size: 14px;
     padding: 0 10px;
-    border: 1px solid #333;
-    background-color: #2a2a2a;
-    color: white;
+    border: 2px solid #8B0000;
+    background-color: #ffffff;
+    color: #8B0000;
     box-sizing: border-box;
 }
 #title { flex: 2; }
@@ -46,65 +49,80 @@ form select {
 form button {
     flex: 1;
     height: 40px;
-    border: none;
     border-radius: 6px;
-    background-color: #f97316;
-    color: white;
+    border: none;
+    background-color: #8B0000;
+    color: #ffffff;
     cursor: pointer;
     transition: 0.3s;
 }
 form button:hover {
-    background-color: #ea580c;
+    background-color: #a00000;
 }
 #filterCategory {
     height: 35px;
     padding: 5px;
     border-radius: 6px;
     margin-bottom: 15px;
-    background-color: #2a2a2a;
-    color: white;
-    border: 1px solid #333;
+    border: 2px solid #8B0000;
+    background-color: #ffffff;
+    color: #8B0000;
 }
 table {
     width: 100%;
     border-collapse: collapse;
-    color: white;
+    color: #8B0000;
 }
 th, td {
-    padding: 10px;
+    padding: 12px;
     text-align: center;
+    border-bottom: 1px solid #8B0000;
 }
 th {
-    background-color: #f97316;
-    color: white;
-}
-tr:nth-child(even) {
-    background-color: #2a2a2a;
-}
-tr:nth-child(odd) {
-    background-color: #1e1e1e;
+    background-color: #8B0000;
+    color: #ffffff;
 }
 .delete-btn {
-    background-color: #dc2626;
+    background-color: #8B0000;
     border: none;
-    color: white;
-    padding: 6px 10px;
+    color: #ffffff;
+    padding: 6px 12px;
     border-radius: 5px;
     cursor: pointer;
 }
 .delete-btn:hover {
-    background-color: #b91c1c;
+    background-color: #a00000;
 }
 .total-box {
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 18px;
     font-weight: bold;
-    color: #f97316;
+    color: #8B0000;
 }
 .error {
-    color: #ef4444;
+    color: #8B0000;
     font-size: 14px;
     margin-bottom: 10px;
+}
+.main-footer {
+    background-color: #8B0000;
+    color: #ffffff;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+.footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-right a:hover {
+    text-decoration: underline;
 }
 @media (max-width: 1024px) {
     .container {
@@ -122,7 +140,7 @@ tr:nth-child(odd) {
 @media (max-width: 600px) {
     .container {
         width: 95%;
-        padding: 15px;
+        padding: 20px;
     }
     form {
         flex-direction: column;
@@ -136,7 +154,12 @@ tr:nth-child(odd) {
         font-size: 22px;
     }
     th, td {
-        padding: 6px;
+        padding: 8px;
         font-size: 13px;
+    }
+    .main-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
